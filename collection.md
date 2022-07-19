@@ -1,5 +1,6 @@
 ---
 layout: page
+theme: jekyll-theme-modernist
 title: "The Collection"
 permalink: /collection/
 ---

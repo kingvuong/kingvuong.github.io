@@ -1,8 +1,14 @@
+---
+layout: page
+theme: jekyll-theme-modernist
+title: "Kevin's Vinyl Collection"
+---
+
 # The Collection
 
-Browse the [collection](https://kingvuong.github.io/collection/) .
+Browse the [_collection_](https://kingvuong.github.io/collection/).
 
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kingvuong/kingvuong.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
