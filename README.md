@@ -1,6 +1,6 @@
 # The Collection
 
-Browse the collection.
+Browse the [collection](https://kingvuong.github.io/collection/) .
 
 ## Welcome to GitHub Pages
 
