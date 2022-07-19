@@ -1,9 +1,3 @@
----
-layout: page
-theme: jekyll-theme-modernist
-title: "Kevin's Vinyl Collection"
----
-
 # The Collection
 
 Browse the [_collection_](https://kingvuong.github.io/collection/).
