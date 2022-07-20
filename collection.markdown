@@ -34,4 +34,7 @@ permalink: /collection/
 td {
   text-align: center;
 }
+th {
+  text-align: center;
+}
 </style>

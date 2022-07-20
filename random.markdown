@@ -57,7 +57,11 @@ permalink: /random/
 {% endfor %}
 </table>
 
- 
+<div class="text-center">
+	<button onclick="getRandomAlbum()">Listen to another album</button>
+</div>
+
+<br>
 
 <table id="random_record">
 <tr>
@@ -91,6 +95,7 @@ function randomIntFromInterval(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
+function getRandomAlbum() {
 const article = document.getElementById("total_albums");
 var random_line_number = randomIntFromInterval(1, article.value);
 var row = document.querySelector(`[id=${CSS.escape(random_line_number)}]`);
@@ -111,12 +116,22 @@ temp = document.getElementById("random_record_art");
 temp.innerHTML = random_art;
 temp = document.getElementById("random_record_spotify");
 temp.innerHTML = random_spotify;
+}
+
+getRandomAlbum();
 
 </script>  
+
+
 
 <style>
 td {
   text-align: center;
 }
+
+.text-center {
+  text-align: center;
+}
+
 </style>
 
