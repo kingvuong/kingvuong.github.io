@@ -47,7 +47,7 @@ permalink: /random/
 	{% comment %}
 	{% tablerow pair in row %}
 	  {%if pair[0] == "Art" %}
-		<td><img style="display:block;" width="100%" height="100%" class="image" src="{{pair[1]}}" alt=""></td>
+		<td><img style="display:block;" class="image" src="{{pair[1]}}" alt=""></td>
 	  {% else %}	
         <td>{{ pair[1] }}</td>
 	  {% endif %}
@@ -61,20 +61,29 @@ permalink: /random/
 
 <table id="random_record">
 <tr>
-        <th>Artist</th>
-		<th>Album</th>
-		<th>Location</th>
-		<th>Art</th>
-		<th>Spotify</th>
-</tr>
-
-<tr >
+    <th>Artist</th>
 	<td id="random_record_artist" ></td>
+</tr>
+<tr>
+	<th>Album</th>
 	<td id="random_record_album"></td>
+</tr>
+<tr>
+	<th>Location</th>
 	<td id="random_record_location"></td>
+</tr>
+<tr>
+	<th>Art</th>
 	<td id="random_record_art"></td>
+</tr>
+<tr>
+	<th>Spotify</th>
 	<td id="random_record_spotify"></td>
 </tr>
+
+
+	
+
 </table>
 
 <script>
