@@ -93,8 +93,10 @@ cellspacing="0" width="100%">
 <style>
 td {
   text-align: center;
+  width: auto;
 }
 th {
   text-align: center;
+  width: auto;
 }
 </style>
