@@ -29,7 +29,7 @@ permalink: /random/
 	{% endfor %}
 	<td>{{ row.Album }}</td>
 	<td>{{ row.Location }}</td>
-	<td><img class="image" src="{{ row.Art }}" alt=""></td>
+	<td><img style="display:block;" class="image" src="{{ row.Art }}" alt=""></td>
 	
 	{%if row.Spotify == nil  %}
 		<td>{{ row.Spotify }}</td>
@@ -47,7 +47,7 @@ permalink: /random/
 	{% comment %}
 	{% tablerow pair in row %}
 	  {%if pair[0] == "Art" %}
-		<td><img style="display:block;" class="image" src="{{pair[1]}}" alt=""></td>
+		<td><img src="{{pair[1]}}" alt="" ></td>
 	  {% else %}	
         <td>{{ pair[1] }}</td>
 	  {% endif %}
@@ -78,7 +78,7 @@ permalink: /random/
 </tr>
 <tr>
 	<th>Art</th>
-	<td id="random_record_art"></td>
+	<td id="random_record_art" class="center"></td>
 </tr>
 <tr>
 	<th>Spotify</th>
@@ -131,6 +131,14 @@ td {
 
 .text-center {
   text-align: center;
+}
+
+img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  
 }
 
 </style>
