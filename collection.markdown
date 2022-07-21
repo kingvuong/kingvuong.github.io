@@ -4,6 +4,7 @@ title: The Collection
 permalink: /collection/
 ---
 
+
 <link rel="stylesheet" 
 href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />     
 <link rel="stylesheet" 
@@ -18,6 +19,14 @@ type="text/javascript"></Script>
 type="text/javascript"></Script>     
 <Script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" 
 type="text/javascript"></Script>
+
+
+<button type="button" onclick="show()" id="btnID">
+        Location Guide
+</button>
+
+<!-- img element without src attribute -->
+<img id="legend" src="/assets/img/legend.png" style="display:none"/>
 
 <table id="example" class="display" 
 cellspacing="0" width="100%">
@@ -88,6 +97,17 @@ cellspacing="0" width="100%">
                 });
             });
         });
+</script>
+
+<script>
+    function show() {
+        var x = document.getElementById("legend");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+    }
 </script>
 	
 <style>
